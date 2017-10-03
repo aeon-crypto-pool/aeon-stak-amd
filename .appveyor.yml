@@ -20,7 +20,7 @@ cache:
 build_script:
   - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat"
   - cd c:\aeon-stak-amd
-  - mkdir builds
+  - mkdir build
   - cd build
   - set CMAKE_PREFIX_PATH=C:\aeon-stak-dep\hwloc;C:\aeon-stak-dep\libmicrohttpd;C:\aeon-stak-dep\openssl;
   - set CMAKE_CXX_FLAGS_STATIC=ON
@@ -34,6 +34,7 @@ test_script:
   - copy c:\aeon-stak-dep\openssl\bin\*.* .
   - mkdir opencl
   - copy ..\..\..\opencl\*.* opencl\
+  - ren xmr-stak-amd.exe aeon-stak-amd.exe
   - tree /f
 artifacts:
   - path: build\bin\Release
