@@ -20,9 +20,10 @@ cache:
 build_script:
   - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat"
   - cd c:\aeon-stak-amd
-  - mkdir build
+  - mkdir builds
   - cd build
   - set CMAKE_PREFIX_PATH=C:\aeon-stak-dep\hwloc;C:\aeon-stak-dep\libmicrohttpd;C:\aeon-stak-dep\openssl;
+  - set CMAKE_CXX_FLAGS_STATIC=ON
   - cmake -G "Visual Studio 15 2017 Win64" -T v141,host=x64 ..
   - msbuild aeon-stak-amd.sln /p:Configuration=Release
 
