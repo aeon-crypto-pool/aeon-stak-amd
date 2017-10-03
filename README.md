@@ -2,6 +2,9 @@
 
 AEON-Stak is a universal Stratum pool miner. This is the AMD GPU-mining version; there is also an [CPU version](https://github.com/shyba/aeon-stak-cpu) and an [NVIDA GPU version](https://github.com/stoffu/aeon-stak-nvidia)
 
+#### CI
+[![Build status](https://ci.appveyor.com/api/projects/status/p21rl7go94wwpm0i?svg=true)](https://ci.appveyor.com/project/RafalSladek/aeon-stak-amd)
+
 #### HTML reports
 
 <img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/e948641897ba79e5a6ee78e8248cc07779d6eac7/xmr-stak-amd-hashrate.png" width="260"> <img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/e948641897ba79e5a6ee78e8248cc07779d6eac7/xmr-stak-amd-results.png" width="260"> <img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/e948641897ba79e5a6ee78e8248cc07779d6eac7/xmr-stak-amd-connection.png" width="260">
