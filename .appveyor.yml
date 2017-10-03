@@ -25,7 +25,7 @@ build_script:
   - set CMAKE_PREFIX_PATH=C:\aeon-stak-dep\hwloc;C:\aeon-stak-dep\libmicrohttpd;C:\aeon-stak-dep\openssl;
   - set CMAKE_CXX_FLAGS_STATIC=ON
   - cmake -G "Visual Studio 15 2017 Win64" -T v141,host=x64 ..
-  - msbuild aeon-stak-amd.sln /p:Configuration=Release
+  - msbuild xmr-stak-amd.sln /p:Configuration=Release
 
 test_script:
   - cd c:\aeon-stak-amd\build\bin\Release
