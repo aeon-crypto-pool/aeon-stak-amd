@@ -10,12 +10,12 @@ clone_folder: c:\aeon-stak-amd
 version: '1.0.{build}-{branch}'
 
 install:
-  - if not exist "c:\aeon-stak-dep" (mkdir c:\aeon-stak-dep & curl -sL https://github.com/fireice-uk/xmr-stak-dep/releases/download/v1/xmr-stak-dep.zip -o aeon-stak-dep.zip & 7z x aeon-stak-dep.zip -o"c:\aeon-stak-dep" -y > nul)
-  - if not exist "c:\aeon-stak-amd-dep-1.0" (curl -sL https://github.com/RafalSladek/xmr-stak-amd-dep/archive/v1.0.zip -o aeon-stak-amd-dep-1.0.zip  & 7z x aeon-stak-amd-dep-1.0.zip -o"C:\" -y > nul)
-  - set AMDAPPSDKROOT=C:\aeon-stak-amd-dep-1.0\3.0
+  - if not exist "c:\aeon-stak-dep" (mkdir c:\aeon-stak-dep & curl -sL https://github.com/fireice-uk/xmr-stak-dep/releases/download/v1/xmr-stak-dep.zip -o aeon-stak-dep.zip & 7z x aeon-stak-dep.zip -o"c:\aeon-stak-dep" -y)
+  - if not exist "c:\aeon-stak-amd-dep-1.0" (curl -sL https://github.com/RafalSladek/xmr-stak-amd-dep/archive/v1.0.zip -o aeon-stak-amd-dep-1.0.zip  & 7z x aeon-stak-amd-dep-1.0.zip -o"C:\" -y)
+  - set AMDAPPSDKROOT=C:\xmr-stak-amd-dep-1.0\3.0
 cache:
     - c:\aeon-stak-dep
-    - c:\aeon-stak-amd-dep-1.0
+    - c:\xmr-stak-amd-dep-1.0
     
 build_script:
   - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat"
